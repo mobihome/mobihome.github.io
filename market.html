@@ -1,0 +1,405 @@
+<!DOCTYOE html>
+<html lang="en-US">
+<head>
+	<title>Mobi Home Market</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<style>
+		.nounderline { text-decoration: none !important }
+		.h-15 { height:12% }
+		.h-90 { height:90% }
+	</style>
+</head>
+<body>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</a>
+            <a class="nav-item nav-link" id="nav-overview2-tab" data-toggle="tab" href="#nav-overview2" role="tab" aria-controls="nav-overview2" aria-selected="false">Overview2</a>
+            <a class="nav-item nav-link" id="nav-economic-tab" data-toggle="tab" href="#nav-economic" role="tab" aria-controls="nav-economic" aria-selected="false">Economic</a>
+            <a class="nav-item nav-link" id="nav-forex-tab" data-toggle="tab" href="#nav-forex" role="tab" aria-controls="nav-forex" aria-selected="false">Forex</a>
+            <a class="nav-item nav-link" id="nav-forexheatmap-tab" data-toggle="tab" href="#nav-forexheatmap" role="tab" aria-controls="nav-forexheatmap" aria-selected="false">Forex Heatmap</a>
+            <a class="nav-item nav-link" id="nav-watchlist-tab" data-toggle="tab" href="#nav-watchlist" role="tab" aria-controls="nav-watchlist" aria-selected="false">Watchlist</a>
+            <a class="nav-item nav-link" id="nav-screener-lse-tab" data-toggle="tab" href="#nav-screener-lse" role="tab" aria-controls="nav-screener-lse" aria-selected="false">LSE Screener</a>
+        </div>
+    </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                    {
+                    "colorTheme": "light",
+                    "dateRange": "1d",
+                    "showChart": true,
+                    "locale": "uk",
+                    "width": "100%",
+                    "height": "100%",
+                    "largeChartUrl": "",
+                    "isTransparent": false,
+                    "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
+                    "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+                    "gridLineColor": "rgba(233, 233, 234, 1)",
+                    "scaleFontColor": "rgba(120, 123, 134, 1)",
+                    "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                    "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                    "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+                    "tabs": [
+                    {
+                        "title": "Indices",
+                        "symbols": [
+                        {
+                            "s": "OANDA:SPX500USD",
+                            "d": "S&P 500"
+                        },
+                        {
+                            "s": "OANDA:NAS100USD",
+                            "d": "Nasdaq 100"
+                        },
+                        {
+                            "s": "FOREXCOM:DJI",
+                            "d": "Dow 30"
+                        },
+                        {
+                            "s": "INDEX:NKY",
+                            "d": "Nikkei 225"
+                        },
+                        {
+                            "s": "INDEX:DEU30",
+                            "d": "DAX Index"
+                        },
+                        {
+                            "s": "OANDA:UK100GBP",
+                            "d": "FTSE 100"
+                        }
+                        ],
+                        "originalTitle": "Indices"
+                    },
+                    {
+                        "title": "Commodities",
+                        "symbols": [
+                        {
+                            "s": "CME_MINI:ES1!",
+                            "d": "E-Mini S&P"
+                        },
+                        {
+                            "s": "CME:6E1!",
+                            "d": "Euro"
+                        },
+                        {
+                            "s": "COMEX:GC1!",
+                            "d": "Gold"
+                        },
+                        {
+                            "s": "NYMEX:CL1!",
+                            "d": "Crude Oil"
+                        },
+                        {
+                            "s": "NYMEX:NG1!",
+                            "d": "Natural Gas"
+                        },
+                        {
+                            "s": "CBOT:ZC1!",
+                            "d": "Corn"
+                        }
+                        ],
+                        "originalTitle": "Commodities"
+                    },
+                    {
+                        "title": "Bonds",
+                        "symbols": [
+                        {
+                            "s": "CME:GE1!",
+                            "d": "Eurodollar"
+                        },
+                        {
+                            "s": "CBOT:ZB1!",
+                            "d": "T-Bond"
+                        },
+                        {
+                            "s": "CBOT:UB1!",
+                            "d": "Ultra T-Bond"
+                        },
+                        {
+                            "s": "EUREX:FGBL1!",
+                            "d": "Euro Bund"
+                        },
+                        {
+                            "s": "EUREX:FBTP1!",
+                            "d": "Euro BTP"
+                        },
+                        {
+                            "s": "EUREX:FGBM1!",
+                            "d": "Euro BOBL"
+                        }
+                        ],
+                        "originalTitle": "Bonds"
+                    },
+                    {
+                        "title": "Forex",
+                        "symbols": [
+                        {
+                            "s": "FX:EURUSD"
+                        },
+                        {
+                            "s": "FX:GBPUSD"
+                        },
+                        {
+                            "s": "FX:USDJPY"
+                        },
+                        {
+                            "s": "FX:USDCHF"
+                        },
+                        {
+                            "s": "FX:AUDUSD"
+                        },
+                        {
+                            "s": "FX:USDCAD"
+                        }
+                        ],
+                        "originalTitle": "Forex"
+                    }
+                    ]
+                }
+                    </script>
+                </div>
+        </div>
+        <div class="tab-pane fade" id="nav-overview2" role="tabpanel" aria-labelledby="nav-overview2-tab">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                {
+                "width": "100%",
+                "height": "100%",
+                "symbolsGroups": [
+                {
+                    "name": "Indices",
+                    "originalName": "Indices",
+                    "symbols": [
+                    {
+                        "name": "OANDA:SPX500USD",
+                        "displayName": "S&P 500"
+                    },
+                    {
+                        "name": "OANDA:NAS100USD",
+                        "displayName": "Nasdaq 100"
+                    },
+                    {
+                        "name": "FOREXCOM:DJI",
+                        "displayName": "Dow 30"
+                    },
+                    {
+                        "name": "INDEX:NKY",
+                        "displayName": "Nikkei 225"
+                    },
+                    {
+                        "name": "INDEX:DEU30",
+                        "displayName": "DAX Index"
+                    },
+                    {
+                        "name": "OANDA:UK100GBP",
+                        "displayName": "FTSE 100"
+                    }
+                    ]
+                },
+                {
+                    "name": "Commodities",
+                    "originalName": "Commodities",
+                    "symbols": [
+                    {
+                        "name": "CME_MINI:ES1!",
+                        "displayName": "E-Mini S&P"
+                    },
+                    {
+                        "name": "CME:6E1!",
+                        "displayName": "Euro"
+                    },
+                    {
+                        "name": "COMEX:GC1!",
+                        "displayName": "Gold"
+                    },
+                    {
+                        "name": "NYMEX:CL1!",
+                        "displayName": "Crude Oil"
+                    },
+                    {
+                        "name": "NYMEX:NG1!",
+                        "displayName": "Natural Gas"
+                    },
+                    {
+                        "name": "CBOT:ZC1!",
+                        "displayName": "Corn"
+                    }
+                    ]
+                },
+                {
+                    "name": "Bonds",
+                    "originalName": "Bonds",
+                    "symbols": [
+                    {
+                        "name": "CME:GE1!",
+                        "displayName": "Eurodollar"
+                    },
+                    {
+                        "name": "CBOT:ZB1!",
+                        "displayName": "T-Bond"
+                    },
+                    {
+                        "name": "CBOT:UB1!",
+                        "displayName": "Ultra T-Bond"
+                    },
+                    {
+                        "name": "EUREX:FGBL1!",
+                        "displayName": "Euro Bund"
+                    },
+                    {
+                        "name": "EUREX:FBTP1!",
+                        "displayName": "Euro BTP"
+                    },
+                    {
+                        "name": "EUREX:FGBM1!",
+                        "displayName": "Euro BOBL"
+                    }
+                    ]
+                },
+                {
+                    "name": "Forex",
+                    "originalName": "Forex",
+                    "symbols": [
+                    {
+                        "name": "FX:EURUSD"
+                    },
+                    {
+                        "name": "FX:GBPUSD"
+                    },
+                    {
+                        "name": "FX:USDJPY"
+                    },
+                    {
+                        "name": "FX:USDCHF"
+                    },
+                    {
+                        "name": "FX:AUDUSD"
+                    },
+                    {
+                        "name": "FX:USDCAD"
+                    }
+                    ]
+                }
+                ],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "locale": "uk"
+            }
+                </script>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-economic" role="tabpanel" aria-labelledby="nav-economic-tab">
+            <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                {
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "uk",
+                    "importanceFilter": "0,1",
+                    "currencyFilter": "GBP,USD,EUR"
+                }
+                </script>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-forex" role="tabpanel" aria-labelledby="nav-forex-tab">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <!-- <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text">Forex Rates</span></a> by TradingView</div> -->
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                {
+                    "width": "100%",
+                    "height": "100%",
+                    "currencies": ["GBP", "EUR", "USD", "INR", "CHF", "AUD", "CAD", "NZD", "CNY", "SGD", "JPY", "RUB" ],
+                    "isTransparent": false,
+                    "colorTheme": "light",
+                    "locale": "uk"
+                }
+                </script>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-forexheatmap" role="tabpanel" aria-labelledby="nav-forexheatmap-tab">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <!-- <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/markets/currencies/forex-heat-map/" rel="noopener" target="_blank"><span class="blue-text">Forex Heat Map</span></a> by TradingView</div> -->
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+                {
+                    "width": "100%",
+                    "height": "100%",
+                    "currencies": ["GBP", "EUR", "USD", "INR", "CHF", "AUD", "CAD", "NZD", "CNY", "SGD", "JPY", "RUB" ],
+                    "isTransparent": false,
+                    "colorTheme": "light",
+                    "locale": "uk"
+                }
+                </script>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-watchlist" role="tabpanel" aria-labelledby="nav-watchlist-tab">
+            <div class="tradingview-widget-container">
+                <div id="tradingview_70015"></div>
+                <!-- <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/symbols/LSE-VWRL/" rel="noopener" target="_blank"><span class="blue-text">VWRL</span></a> <span class="blue-text">and</span> <a href="https://uk.tradingview.com/symbols/LSE-RDSB/" rel="noopener" target="_blank"><span class="blue-text">RDSB Quotes</span></a> by TradingView</div> -->
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                new TradingView.MediumWidget(
+                {
+                    "symbols": [
+                    [
+                        "VWRL",
+                        "LSE:VWRL|12m"
+                    ],
+                    [
+                        "RDSB",
+                        "LSE:RDSB|12m"
+                    ]
+                    ],
+                    "chartOnly": false,
+                    "width": "100%",
+                    "height": "96%",
+                    "locale": "uk",
+                    "colorTheme": "light",
+                    "gridLineColor": "#F0F3FA",
+                    "trendLineColor": "#2196F3",
+                    "fontColor": "#787B86",
+                    "underLineColor": "#E3F2FD",
+                    "isTransparent": false,
+                    "autosize": true,
+                    "container_id": "tradingview_70015"
+                }
+                );
+                </script>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-screener-lse" role="tabpanel" aria-labelledby="nav-screener-lse-tab">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <!-- <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/screener/" rel="noopener" target="_blank"><span class="blue-text">Stock Screener</span></a> by TradingView</div> -->
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                {
+                    "width": "100%",
+                    "height": "100%",
+                    "defaultColumn": "overview",
+                    "defaultScreen": "most_capitalized",
+                    "market": "uk",
+                    "showToolbar": true,
+                    "colorTheme": "light",
+                    "locale": "uk"
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
